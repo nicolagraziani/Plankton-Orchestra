@@ -46,7 +46,7 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <i class="bi bi-list"></i>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
@@ -83,8 +83,8 @@
           src="assets/plankton.png"
           alt="Plankton Orchestra"
         />
+        <img id="orchestra-logo" src="assets/orchestra.png" alt="Orchestra" />
       </h1>
-      <img id="orchestra-logo" src="assets/orchestra.png" alt="Orchestra" />
     </main>
 
     <footer id="homeFooter">
@@ -111,5 +111,14 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script>
+
+      const navbar = document.getElementsByClassName("navbar-toggler");
+      const navbarIcon = document.getElementsByClassName("bi-list");
+
+      navbar[0].addEventListener("click", () => {
+        navbarIcon[0].classList.toggle("navbarOpen");
+      });
+    </script>
   </body>
 </html>

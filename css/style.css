@@ -13,10 +13,11 @@ nav {
   background: linear-gradient(180deg, black 0%, #080d04 82%, rgba(8, 13, 4, 0) 100%);
   padding: 24px !important; }
   nav img {
+    box-sizing: content-box;
     width: 60px;
     height: auto;
     border: 1px solid white;
-    box-shadow: 1px 1px 4px 1px rgba(210, 210, 210, 0.7), -1px -1px 4px 1px rgba(210, 210, 210, 0.7), -1px 1px 4px 1px rgba(210, 210, 210, 0.7), 1px -1px 4px 1px rgba(210, 210, 210, 0.7); }
+    box-shadow: 1px 1px 4px 1px rgba(210, 210, 210, 0.5), -1px -1px 4px 1px rgba(210, 210, 210, 0.5), -1px 1px 4px 1px rgba(210, 210, 210, 0.5), 1px -1px 4px 1px rgba(210, 210, 210, 0.5); }
   nav li {
     font-weight: 500;
     display: inline;
@@ -43,11 +44,16 @@ nav {
   background: black !important;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0) 100%) !important; }
 
+.bi-list {
+  color: #ffffff;
+  font-size: 1.5em; }
+
 .navbar-toggler {
   color: transparent !important;
-  border: 2px white solid !important; }
-  .navbar-toggler:hover {
-    box-shadow: 1px 1px 8px 1px rgba(210, 210, 210, 0.7), -1px -1px 8px 1px rgba(210, 210, 210, 0.7), -1px 1px 8px 1px rgba(210, 210, 210, 0.7), 1px -1px 8px 1px rgba(210, 210, 210, 0.7); }
+  border: none !important; }
+
+.navbarOpen {
+  text-shadow: 1px 1px 8px rgba(210, 210, 210, 0.7), -1px -1px 8px rgba(210, 210, 210, 0.7), -1px 1px 8px rgba(210, 210, 210, 0.7), 1px -1px 8px rgba(210, 210, 210, 0.7); }
 
 @media screen and (max-width: 991px) {
   nav {
@@ -88,8 +94,12 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 130%;
-  text-align: center;
-  height: calc(100vh - 55.2px); }
+  height: calc(100vh - 55.2px);
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  #homepage h1 {
+    text-align: center; }
 
 @media screen and (min-width: 992px) {
   #homepage {
@@ -97,48 +107,36 @@ footer {
 
 #plankton-logo {
   width: 80%;
-  margin-top: 130px; }
+  margin-bottom: 70%; }
 
 #orchestra-logo {
-  width: 80%;
-  margin-top: 300px; }
+  width: 80%; }
 
-@media screen and (min-width: 425px) {
+@media screen and (min-width: 400px) {
+  #homepage h1 {
+    position: relative;
+    top: 8%; }
   #plankton-logo {
-    margin-top: 110px; }
-  #orchestra-logo {
-    margin-top: 320px; } }
+    margin-bottom: 50%; } }
+
+@media screen and (min-width: 650px) {
+  #plankton-logo {
+    margin-bottom: 40%; } }
 
 @media screen and (min-width: 768px) {
   #plankton-logo {
-    width: 60%; }
-  #orchestra-logo {
     width: 60%;
-    margin-top: 340px; } }
-
-@media screen and (min-width: 1200px) {
+    margin-bottom: 40%; }
   #orchestra-logo {
-    margin-top: 340px; } }
+    width: 60%; } }
 
-@media screen and (min-width: 1350px) {
-  #orchestra-logo {
-    margin-top: 400px; } }
-
-@media screen and (min-width: 1600px) {
-  #orchestra-logo {
-    margin-top: 500px; } }
-
-@media screen and (min-width: 1900px) {
+@media screen and (min-width: 900px) {
   #plankton-logo {
-    margin-top: 150px; }
-  #orchestra-logo {
-    margin-top: 600px; } }
+    margin-bottom: 35%; } }
 
-@media screen and (min-width: 2200px) {
+@media screen and (min-width: 992px) {
   #plankton-logo {
-    margin-top: 180px; }
-  #orchestra-logo {
-    margin-top: 720px; } }
+    margin-bottom: 28%; } }
 
 /*** About ***/
 #about {
