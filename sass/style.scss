@@ -178,6 +178,21 @@ footer {
   width: 80%;
 }
 
+@media screen and (orientation: landscape) and (max-device-width:480px) {
+  #plankton-logo, #orchestra-logo {
+    display: none;
+  }
+  #homepage {
+    background-size: cover;
+  }
+
+  #navbar {
+    overflow: scroll;
+  }
+
+
+}
+
 @media screen and (min-width: 400px) {
   #homepage h1 {
     position: relative;
@@ -225,17 +240,7 @@ footer {
   }
 }
 
-@media screen and (orientation: landscape) and (max-device-width:480px) {
-  #plankton-logo, #orchestra-logo {
-    display: none;
-  }
 
-  #homepage {
-    background-size: cover;
-  }
-
-
-}
 /*** About ***/
 #about {
   padding-top: 110px;
