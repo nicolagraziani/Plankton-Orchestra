@@ -181,7 +181,7 @@ footer {
 @media screen and (min-width: 400px) {
   #homepage h1 {
     position: relative;
-    top: 8%;
+    top: 6%;
   }
   #plankton-logo {
     margin-bottom: 50%;
@@ -213,6 +213,12 @@ footer {
 @media screen and (min-width: 992px) {
   #plankton-logo {
     margin-bottom: 28%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #plankton-logo {
+    margin-bottom: 25%;
   }
 }
 
