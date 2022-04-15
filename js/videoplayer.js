@@ -17,6 +17,7 @@ vid3.addEventListener("click", () => {
 });
 
 function changeVideo(n) {
+    window.scrollTo(0, 0);
     switch (n) {
         case 1:
             shownVideo.src = "https://www.youtube.com/embed/gb-d54aB2xM?autoplay=1";
