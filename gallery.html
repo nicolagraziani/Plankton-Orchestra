@@ -46,7 +46,7 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <i class="bi bi-list"></i>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
@@ -79,108 +79,61 @@
       </nav>
     </header>
 
+    <h1>Masonry - imagesLoaded progress</h1>
+
+
+
     <main id="gallery">
       <div class="container">
         <h1>Gallery</h1>
         <div id="galleryCont" class="grid">
-          <div class="grid-item">
-            <img
-              class="img-fluid"
-              src="assets/gallery/gallery1.png"
-              alt=""
-            />
-          </div>
-          <div class="grid-item">
-            <img
-              class="img-fluid"
-              src="assets/gallery/gallery2.png"
-              alt=""
-            />
-          </div>
-          <div class="grid-item">
-            <img
-              class="img-fluid"
-              src="assets/gallery/gallery3.png"
-              alt=""
-            />
-          </div>
-          <div class="grid-item">
-            <img
-              class="img-fluid"
-              src="assets/gallery/gallery4.png"
-              alt=""
-            />
-          </div>
-          <div class="grid-item">
-            <img
-              class="img-fluid"
-              src="assets/gallery/gallery5.png"
-              alt=""
-            />
-          </div>
-          <div class="grid-item">
-            <img
-              class="img-fluid"
-              src="assets/gallery/gallery6.png"
-              alt=""
-            />
-          </div>
-          <div class="grid-item">
-            <img
-              class="img-fluid"
-              src="assets/gallery/gallery7.png"
-              alt=""
-            />
-          </div>
-          <div class="grid-item">
-            <img
-              class="img-fluid"
-              src="assets/gallery/gallery8.png"
-              alt=""
-            />
-          </div>
-          <div class="grid-item">
-            <img
-              class="img-fluid"
-              src="assets/gallery/gallery9.png"
-              alt=""
-            />
-          </div>
-          <div class="grid-item">
-            <img
-              class="img-fluid"
-              src="assets/gallery/gallery10.png"
-              alt=""
-            />
-          </div>
-          <div class="grid-item">
-            <img
-              class="img-fluid"
-              src="assets/gallery/gallery11.png"
-              alt=""
-            />
-          </div>
-          <div class="grid-item">
-            <img
-              class="img-fluid"
-              src="assets/gallery/gallery12.png"
-              alt=""
-            />
-          </div>
-          <div class="grid-item">
-            <img
-              class="img-fluid"
-              src="assets/gallery/gallery13.png"
-              alt=""
-            />
-          </div>
+          <div class="grid-sizer"></div>
 
+          <div class="grid-item">
+            <img class="img-fluid" src="assets/gallery/gallery1.png" alt="" />
+          </div>
+          <div class="grid-item">
+            <img class="img-fluid" src="assets/gallery/gallery2.png" alt="" />
+          </div>
+          <div class="grid-item">
+            <img class="img-fluid" src="assets/gallery/gallery3.png" alt="" />
+          </div>
+          <div class="grid-item">
+            <img class="img-fluid" src="assets/gallery/gallery4.png" alt="" />
+          </div>
+          <div class="grid-item">
+            <img class="img-fluid" src="assets/gallery/gallery5.png" alt="" />
+          </div>
+          <div class="grid-item">
+            <img class="img-fluid" src="assets/gallery/gallery6.png" alt="" />
+          </div>
+          <div class="grid-item">
+            <img class="img-fluid" src="assets/gallery/gallery7.png" alt="" />
+          </div>
+          <div class="grid-item">
+            <img class="img-fluid" src="assets/gallery/gallery8.png" alt="" />
+          </div>
+          <div class="grid-item">
+            <img class="img-fluid" src="assets/gallery/gallery9.png" alt="" />
+          </div>
+          <div class="grid-item">
+            <img class="img-fluid" src="assets/gallery/gallery10.png" alt="" />
+          </div>
+          <div class="grid-item">
+            <img class="img-fluid" src="assets/gallery/gallery11.png" alt="" />
+          </div>
+          <div class="grid-item">
+            <img class="img-fluid" src="assets/gallery/gallery12.png" alt="" />
+          </div>
+          <div class="grid-item">
+            <img class="img-fluid" src="assets/gallery/gallery13.png" alt="" />
+          </div>
         </div>
       </div>
     </main>
 
     <footer>
-      <div class="d-flex justify-content-between">
+      <div class="d-flex justify-content-between align-items-center">
         <ul class="d-inline">
           <li class="d-inline">
             <a href="https://www.facebook.com/planktonorchestra/"
@@ -203,6 +156,9 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-    <script src="js/masonry.js"></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/navbar.js"></script>
+
   </body>
 </html>

@@ -76,9 +76,12 @@ nav {
     rgba(0, 0, 0, 0) 100%
   ) !important;
 }
+
 .bi-list {
-    color: #ffffff;
-    font-size: 1.5em;
+  color: #ffffff;
+  font-size: 2em;
+  position: relative;
+  bottom: 5px;
 }
 
 .navbar-toggler {
@@ -87,7 +90,7 @@ nav {
 }
 
 .navbarOpen {
-    text-shadow: $white-shadow;
+  text-shadow: $white-shadow;
 }
 
 @media screen and (max-width: 991px) {
@@ -158,7 +161,7 @@ footer {
   justify-content: center;
   align-items: center;
   h1 {
-      text-align: center;
+    text-align: center;
   }
 }
 @media screen and (min-width: 992px) {
@@ -176,47 +179,42 @@ footer {
 }
 
 @media screen and (min-width: 400px) {
-    #homepage h1 {
-        position: relative;
-        top:8%;
-    }
-    #plankton-logo{
-        margin-bottom: 50%;
-    }
+  #homepage h1 {
+    position: relative;
+    top: 8%;
+  }
+  #plankton-logo {
+    margin-bottom: 50%;
+  }
 }
 
 @media screen and (min-width: 650px) {
-    #plankton-logo{
-        margin-bottom: 40%;
-    }
+  #plankton-logo {
+    margin-bottom: 40%;
+  }
 }
 
 @media screen and (min-width: 768px) {
-    #plankton-logo {
-        width: 60%;
-        margin-bottom: 40%;
-    }
-    #orchestra-logo {
-        width: 60%;
-    }
+  #plankton-logo {
+    width: 60%;
+    margin-bottom: 40%;
+  }
+  #orchestra-logo {
+    width: 60%;
+  }
 }
 
 @media screen and (min-width: 900px) {
-    #plankton-logo {
-        margin-bottom: 35%;
-    }
-
+  #plankton-logo {
+    margin-bottom: 35%;
+  }
 }
 
 @media screen and (min-width: 992px) {
-    #plankton-logo {
-        margin-bottom: 28%;
-    }
-
+  #plankton-logo {
+    margin-bottom: 28%;
+  }
 }
-
-
-
 
 /*** About ***/
 #about {
@@ -365,21 +363,39 @@ footer {
   }
 }
 
-.grid-item {
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+.grid-sizer, .grid-item {
   width: 100%;
+}
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0 0 20px;
+
+}
+
+.grid-item {
+  float: left;
   height: auto;
   margin-bottom: 10px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0 0 20px;
 }
 
 @media screen and (min-width: 768px) {
-  .grid-item {
+  .grid-sizer, .grid-item {
     width: calc(50% - 10px);
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .grid-item {
+  .grid-sizer, .grid-item {
     width: calc(33.333% - 10px);
   }
 }

@@ -46,7 +46,9 @@ nav {
 
 .bi-list {
   color: #ffffff;
-  font-size: 1.5em; }
+  font-size: 2em;
+  position: relative;
+  bottom: 5px; }
 
 .navbar-toggler {
   color: transparent !important;
@@ -250,18 +252,31 @@ footer {
     font-size: 2em;
     margin-bottom: 0.5em; }
 
-.grid-item {
-  width: 100%;
-  height: auto;
-  margin-bottom: 10px;
+.grid:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+/* ---- .grid-item ---- */
+.grid-sizer, .grid-item {
+  width: 100%; }
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
   box-shadow: rgba(149, 157, 165, 0.2) 0 0 20px; }
 
+.grid-item {
+  float: left;
+  height: auto;
+  margin-bottom: 10px; }
+
 @media screen and (min-width: 768px) {
-  .grid-item {
+  .grid-sizer, .grid-item {
     width: calc(50% - 10px); } }
 
 @media screen and (min-width: 1024px) {
-  .grid-item {
+  .grid-sizer, .grid-item {
     width: calc(33.333% - 10px); } }
 
 /*** Tour ***/
