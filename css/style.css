@@ -148,7 +148,9 @@ footer {
 
 @media screen and (orientation: landscape) and (max-device-width: 480px) {
   #plankton-logo, #orchestra-logo {
-    display: none; } }
+    display: none; }
+  #homepage {
+    background-size: cover; } }
 
 /*** About ***/
 #about {
